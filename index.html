@@ -1,0 +1,586 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsive Web Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<style>
+    #navbarSupportedContent{
+        margin-left:490px;
+    }
+   body {
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  background-color: #6C55A3;
+  border-radius: 0;
+  border: none;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav > li > a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar-nav > li > a:hover {
+  color: #ccc;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  bottom: 0;
+  top: auto;
+}
+
+.carousel-caption h5 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #544871;
+  color: #c4a3a3;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.card-header:hover {
+  background-color: #c8c0da;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-text {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: #6C55A3;
+  border-color: #6C55A3;
+}
+
+.btn-primary:hover {
+  background-color: #5a458c;
+  border-color: #5a458c;
+}
+
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.btn-primary:active {
+  background-color: #4a366f;
+  border-color: #4a366f;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+  font-size: 1.1rem;
+}
+.container {
+  padding: 2rem 0rem;
+}
+
+h4 {
+  margin: 2rem 0rem 1rem;
+}
+
+.table-image {
+  td, th {
+    vertical-align: middle;
+  }
+}
+
+	.contact{
+		padding: 4%;
+		height: 400px;
+	}
+	.col-md-3{
+		background: #ff9b00;
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+	}
+	.contact-info{
+		margin-top:10%;
+	}
+	.contact-info img{
+		margin-bottom: 15%;
+	}
+	.contact-info h2{
+		margin-bottom: 10%;
+	}
+	.col-md-9{
+		background: #fff;
+		padding: 3%;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+	}
+	.contact-form label{
+		font-weight:600;
+	}
+	.contact-form button{
+		background: #25274d;
+		color: #fff;
+		font-weight: 600;
+		width: 25%;
+	}
+	.contact-form button:focus{
+		box-shadow:none;
+	}
+</style>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">KUSHAL'S</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Portfolio">Portfolio</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Necklaces</a>
+                      <a class="dropdown-item" href="#">Earrings</a>
+                      <a class="dropdown-item" href="#">Bangles</a>
+                      <a class="dropdown-item" href="#">Accessories</a>
+                      <a class="dropdown-item" href="#">Wedding store</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Happy Customer</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.kushals.com/cdn/shop/collections/76741R_grande_08f087db-91d2-4f0c-a6e2-54d15312e9e5.jpg?v=1655701180&width=1200" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.kushals.com/cdn/shop/collections/bridal_067c1d85-811f-4886-9be0-96a7b42b793b.jpg?v=1655720552&width=1200" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.kushals.com/cdn/shop/collections/Untitled_266f3c58-63ad-40fd-beb3-00700c8f4dce.jpg?v=1655701485&width=1200" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Accordion -->
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is Kushal's
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    Kushals.com is an exciting new way to buy Fashion and Silver Jewellery and Accessories Online.  While the idea of buying jewellery online is not new, kushals.com provides a intuitive interface and detailed description to help you search and order the perfect jewellery to match your needs for all occasions. Kushals.com will delight you with its wide collection of Indian and Western, Fashion and Silver Jewellery and gratify you with its excellent customer service.
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        About Us
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    Kushals.com is an online initiative of Kushal's Fashion Jewellery.
+
+Kushal's Fashion Jewellery is a Bangalore based chain of Fashion Jewellery stores currently having stores in Bangalore, Chennai, Hyderabad, Mysore, Coimbatore, Chandigarh, Kochi, Trivandrum, Ahmedabad, Mangalore, Vijayawada, Belgaum, Hubli, Vizag, Pune, Indore, Rajahmundry and Guntur.
+
+In current scenario, Kushal’s is often bestowed with abundant wishes and praises by customers for making the “fashion jewellery” shopping an out-of-the-world experience. Rejoicing the glory, Kushal’s chain of stores plans to achieve a pan India presence by the end of 2024.
+
+ 
+
+Our vision is to offer our customers the most exclusive and beautiful collection of jewellery and gratify them from our exceptional service and quality.
+
+To be able to add up little more to the natural beauty !!
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+
+
+
+
+    <!-- Button -->
+    <button class="btn btn-primary animated-button" data-toggle="animation" data-animation="pulse" data-animation-fill="both" data-target="#home">Pulse</button>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1 class="display-4">Greetings from KUSHAL'S</h1>
+        <p class="lead">Understanding that each jewellery gift holds a unique sentiment and story.</p>
+        <hr class="my-4">
+        <p>Kushal’s is committed to offer a smooth omni-channel presence, ensuring a seamless shopping experience both online and offline.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+    <!-- Cards -->
+    <div class="card-deck">
+        <div class="card">
+            <img src="https://www.kushals.com/cdn/shop/files/1_27.jpg?v=1713349097&width=344" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pendants</h5>
+                <p class="card-text">A pendant is a loose-hanging piece of jewelry generally attached by a small loop to a necklace which is known as the pendant necklace. </p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.kushals.com/cdn/shop/files/3_13_b9925051-605f-454b-a20c-6f86a5b0793e.jpg?v=1713349318&width=344" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Earrings</h5>
+                <p class="card-text"> Earrings are more than just accessories. They are a symbol of marital status, a rite of passage for children, and a protective talisman against evil spirits.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.kushals.com/cdn/shop/files/2_15_cbb83f14-6b7e-4c3f-a153-6d28ff752d6b.jpg?v=1713349187&width=344" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Kadas</h5>
+                <p class="card-text">Kadas are worn as an Amulet of Protection</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+    <div class="card-deck ">
+        <div class="card">
+            <img src="https://www.kushals.com/cdn/shop/files/4_8_f1e6c41d-00f5-40c4-8f1b-a57dab407ebe.jpg?v=1713349355&width=344" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Rings</h5>
+                <p class="card-text"> A symbol of love and the promise of a future together.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.kushals.com/cdn/shop/files/2_14_6370afa6-00d6-494c-b3f4-7b9b6a0f92af.jpg?v=1709126002&width=344" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Necklaces</h5>
+                <p class="card-text">Elegant jewellery for women</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.kushals.com/cdn/shop/files/4_6_d0c98a18-ca19-41d2-8db2-bee824744e80.jpg?v=1709126443&width=344" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Divine jewellery</h5>
+                <p class="card-text">Divinity in every wear.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+    </div>
+
+ 
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+              <table class="table table-image">
+                <thead>
+                  <tr>
+                    <th scope="col">sl.no</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Product Details</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Reviews</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="w-25">
+                        <img src="https://www.kushals.com/cdn/shop/files/antique-necklace-ruby-green-gold-antique-necklace-172629-38339990421660.jpg?v=171525843300&width=267" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Antique Necklace</td>
+                    <td>Adjustable Chain</td>
+                    <td>4200</td>
+                    <td>17k</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="w-25">
+                        <img src="https://www.kushals.com/cdn/shop/files/antique-earring-green-gold-antique-earring-172451-38340001104028.jpg?v=171525753400&width=704" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Antique Earring</td>
+                    <td>Earring Style: 	Hanging</td>
+                    <td>1250</td>
+                    <td>17k</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td class="w-25">
+                        <img src="https://www.kushals.com/cdn/shop/files/kundan-bangle-white-2-4-ivory-green-kundan-bangle-164140-37681605869724.jpg?v=170969336700&width=704" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Kundan Bangle</td>
+                    <td>Bangle type: 	Single Bangle</td>
+                    <td>4480</td>
+                    <td>16k</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td class="w-25">
+                        <img src="https://www.kushals.com/cdn/shop/files/kundan-necklace-green-victorian-kundan-necklace-164051-37708234883228.jpg?v=170982315800&width=704" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Kundan Necklace</td>
+                    <td>Necklace Style: 	Short Necklace</td>
+                    <td>9850</td>
+                    <td>14k</td>
+                  </tr>
+                </tbody>
+              </table>   
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Click For Magic
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">NAMASKAR</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Welcome to Kushal's Fashion Jewellery! Enjoy your shopping with us!!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <form>
+        <div class="form-group">
+            <h2>For more updates please Sign Up!!!</h2>
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out( I Agree to terms and conditions)</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<div class="container my-5">
+
+    <footer class="text-center text-white" style="background-color: #3f51b5">
+      
+      <div class="container">
+        
+        <section class="mt-5">
+         
+          <div class="row text-center d-flex justify-content-center pt-5">
+       
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">About us</a>
+              </h6>
+            </div>
+            
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Products</a>
+              </h6>
+            </div>
+            
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Awards</a>
+              </h6>
+            </div>
+            
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Help</a>
+              </h6>
+            </div>
+            
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Contact</a>
+              </h6>
+            </div>
+            
+          </div>
+         
+        </section>
+  
+  
+        <hr class="my-5" />
+  
+   
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                The moment you walk out the door of your home, you are making a statement of who you are. A good wardrobe or coordination of an outfit is absolutely essential for success. It doesn’t matter who you are and what you do, looking sharp will improve how others perceive you. Perception defines how you will be remembered. 
+              </p>
+            </div>
+          </div>
+        </section>
+       
+        <section class="text-center mb-5">
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+       
+      </div>
+     
+  
+    
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2024 Copyright:
+        <a class="text-white" href="#"
+           >kushal's.com</a
+          >
+      </div>
+    
+    </footer>
+
+  </div>
+  
+
+
